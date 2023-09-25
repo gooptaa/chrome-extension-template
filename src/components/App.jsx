@@ -1,7 +1,8 @@
 import React from 'react';
+import './styles.css';
 
 const App = () => (
-  <div>
+  <div className="maxSize">
     <h1>Chrome Extension Template</h1>
   </div>
 );

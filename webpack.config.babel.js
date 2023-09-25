@@ -7,7 +7,7 @@ module.exports = {
     filename: 'index.js',
   },
   resolve: {
-    extensions: ['.js', '.jsx'],
+    extensions: ['.css', '.js', '.jsx'],
   },
   mode: 'production',
   module: {
@@ -24,7 +24,13 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['css-loader'],
+        exclude: /node_modules/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+          },
+        ],
       },
     ],
   },
