@@ -8,14 +8,6 @@ module.exports = {
     'dist/',
     'scripts/',
   ],
-  env: {
-    ecmaFeatures: {
-      jsx: true,
-    },
-    ecmaVersion: 'latest',
-    browser: true,
-    webextensions: true,
-  },
   globals: {
     chrome: true,
     browser: true,
@@ -44,9 +36,10 @@ module.exports = {
         '**/*.spec.js',
       ],
     }],
-    'max-params': ['error' , 3],
+    'max-params': ['error', 3],
     'no-console': 'off',
-    'no-extra-parens': ['error', 'off'],
+    'no-extra-parens': 'off',
+    'react/function-component-definition': 'off',
     'react/jsx-props-no-spreading': 'off',
     'unicorn/explicit-length-check': 'off',
   },
